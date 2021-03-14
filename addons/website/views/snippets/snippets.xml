@@ -171,7 +171,6 @@
         <t t-install="website_form" string="Form Builder" t-thumbnail="/website/static/src/img/snippets_thumbs/s_website_form.svg"/>
         <t id="newsletter_popup_snippet" t-install="mass_mailing" string="Newsletter Popup" t-thumbnail="/website/static/src/img/snippets_thumbs/newsletter_subscribe_popup.svg"/>
         <t t-install="website_mail_channel" string="Discussion Group" t-thumbnail="/website/static/src/img/snippets_thumbs/s_channel.svg"/>
-        <t t-install="website_twitter" string="Twitter Scroller" t-thumbnail="/website/static/src/img/snippets_thumbs/s_twitter_scroll.svg"/>
     </xpath>
     <xpath expr="//div[@id='snippet_content']//t[@t-snippet][last()]" position="after">
         <t id="newsletter_snippet" t-install="mass_mailing" string="Newsletter" t-thumbnail="/website/static/src/img/snippets_thumbs/s_newsletter_subscribe_form.svg"/>

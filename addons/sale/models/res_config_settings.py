@@ -36,16 +36,9 @@ class ResConfigSettings(models.TransientModel):
     ], string='Customer Account', default='b2b', config_parameter='auth_signup.invitation_scope')
 
     module_delivery = fields.Boolean("Delivery Methods")
-    module_delivery_dhl = fields.Boolean("DHL USA Connector")
-    module_delivery_fedex = fields.Boolean("FedEx Connector")
-    module_delivery_ups = fields.Boolean("UPS Connector")
-    module_delivery_usps = fields.Boolean("USPS Connector")
-    module_delivery_bpost = fields.Boolean("bpost Connector")
-    module_delivery_easypost = fields.Boolean("Easypost Connector")
 
     module_product_email_template = fields.Boolean("Specific Email")
     module_sale_coupon = fields.Boolean("Coupons & Promotions")
-    module_sale_amazon = fields.Boolean("Amazon Sync")
 
     automatic_invoice = fields.Boolean("Automatic Invoice",
                                        help="The invoice is generated automatically and available in the customer portal "

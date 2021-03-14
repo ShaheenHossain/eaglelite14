@@ -592,34 +592,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_purchase_intrastat
-msgid ""
-"\n"
-"        Bridge module between purchase and intrastat.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_sale_intrastat
-msgid ""
-"\n"
-"        Bridge module between sale and intrastat.\n"
-"    "
-msgstr ""
-"\n"
-"বিক্রয় এবং ইন্ট্রাস্ট্যাটের মধ্যে ব্রিজ মডিউল।"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_be_sale_intrastat
-msgid ""
-"\n"
-"        Bridge module between sale_intrastat and l10n_be_intrastat.\n"
-"    "
-msgstr ""
-"\n"
-"বিক্রয়_সিনস্ট্রট এবং l10n_be_intrastat এর মধ্যে ব্রিজ মডিউল।"
-
-#. module: base
 #: model:ir.module.module,summary:base.module_website_sale_product_configurator
 msgid ""
 "\n"
@@ -833,17 +805,6 @@ msgid ""
 "        Specify rentals of products (products, quotations, invoices, ...)\n"
 "        Manage status of products, rentals, delays\n"
 "        Manage user and manager notifications\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_base_sparse_field
-msgid ""
-"\n"
-"        The purpose of this module is to implement \"sparse\" fields, i.e., fields\n"
-"        that are mostly null. This implementation circumvents the PostgreSQL\n"
-"        limitation on the number of columns in a table. The values of all sparse\n"
-"        fields are stored in a \"serialized\" field in the form of a JSON mapping.\n"
 "    "
 msgstr ""
 
@@ -1257,26 +1218,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_timesheet_grid
-msgid ""
-"\n"
-"* Timesheet submission and validation\n"
-"* Activate grid view for timesheets\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_stock_intrastat
-msgid ""
-"\n"
-"A module that add the stock management in intrastat reports.\n"
-"============================================================\n"
-"\n"
-"This module gives the details of the goods traded between the countries of\n"
-"European Union."
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_au_aba
 msgid ""
 "\n"
@@ -1685,13 +1626,6 @@ msgid ""
 "    "
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,description:base.module_auth_oauth
-msgid ""
-"\n"
-"Allow users to login through OAuth2 Provider.\n"
-"=============================================\n"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_auth_signup
@@ -2091,17 +2025,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_hr_skills_survey
-msgid ""
-"\n"
-"Certification and Skills for HR\n"
-"===============================\n"
-"\n"
-"This module adds certification to resumé for employees.\n"
-"        "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_ve
 msgid ""
 "\n"
@@ -2286,23 +2209,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_website_slides
-msgid ""
-"\n"
-"Create Online Courses\n"
-"=====================\n"
-"\n"
-"Featuring\n"
-"\n"
-" * Integrated course and lesson management\n"
-" * Fullscreen navigation\n"
-" * Support Youtube videos, Google documents, PDF, images, web pages\n"
-" * Test knowledge with quizzes\n"
-" * Filter and Tag\n"
-" * Statistics\n"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_industry_fsm_report
 msgid ""
 "\n"
@@ -2451,17 +2357,6 @@ msgid ""
 "\n"
 "E-invoice implementation\n"
 "    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_hr_skills_slides
-msgid ""
-"\n"
-"E-learning and Skills for HR\n"
-"============================\n"
-"\n"
-"This module add completed courses to resumé for employees.\n"
-"        "
 msgstr ""
 
 #. module: base
@@ -2889,28 +2784,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_be_intrastat
-msgid ""
-"\n"
-"Generates Intrastat XML report for declaration\n"
-"Based on invoices.\n"
-"Adds the possibility to specify the origin country of goods and the partner VAT in the Intrastat XML report.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_nl_intrastat
-#: model:ir.module.module,description:base.module_l10n_nl_report_intrastat
-msgid ""
-"\n"
-"Generates Netherlands Intrastat report for declaration based on invoices.\n"
-"    "
-msgstr ""
-"\n"
-" \n"
-"চালানের উপর ভিত্তি করে ঘোষণার জন্য নেদারল্যান্ডসের ইন্টারস্ট্যাট প্রতিবেদন তৈরি করে।"
-
-#. module: base
 #: model:ir.module.module,description:base.module_hr_payroll_account
 msgid ""
 "\n"
@@ -3093,15 +2966,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_account_intrastat
-msgid ""
-"\n"
-"Intrastat Reports\n"
-"==================\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_account
 msgid ""
 "\n"
@@ -3200,20 +3064,6 @@ msgid ""
 "* Plan maintenance requests (also recurring preventive)\n"
 "* Equipments related to workcenters\n"
 "* MTBF, MTTR, ...\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_twitter_wall
-msgid ""
-"\n"
-"Make Everybody a Part of Your Event\n"
-"===================================\n"
-"\n"
-"Turn your event into an interactive experience by letting everybody post to your Twitter Wall. Connect with the crowd and build a personal relationship with attendees.\n"
-" * Create Live twitter walls for event\n"
-" * No complex moderation needed.\n"
-" * Customize your live view with help of various options.\n"
-" * Auto Storify view after event is over.\n"
 msgstr ""
 
 #. module: base
@@ -4681,14 +4531,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_website_twitter
-msgid ""
-"\n"
-"This module adds a Twitter scroller building block to the website builder, so that you can display Twitter feeds on any page of your website.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_website_sale_comparison
 msgid ""
 "\n"
@@ -5227,15 +5069,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_test_website_slides_full
-msgid ""
-"\n"
-"This module will test the main certification flow of Odoo.\n"
-"It will install the e-learning, survey and e-commerce apps and make a complete\n"
-"certification flow including purchase, certification, failure and success.\n"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_test_event_full
 msgid ""
 "\n"
@@ -5281,24 +5114,6 @@ msgid ""
 "    - alert date\n"
 "\n"
 "Also implements the removal strategy First Expiry First Out (FEFO) widely used, for example, in food industries.\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_transifex
-msgid ""
-"\n"
-"Transifex integration\n"
-"=====================\n"
-"This module will add a link to the Transifex project in the translation view.\n"
-"The purpose of this module is to speed up translations of the main modules.\n"
-"\n"
-"To work, Odoo uses Transifex configuration files `.tx/config` to detec the\n"
-"project source. Custom modules will not be translated (as not published on\n"
-"the main Transifex project).\n"
-"\n"
-"The language the user tries to translate must be activated on the Transifex\n"
-"project.\n"
-"        "
 msgstr ""
 
 #. module: base
@@ -6410,13 +6225,6 @@ msgid "A AGRICULTURE, FORESTRY AND FISHING"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_website_slides_forum
-msgid ""
-"A Slide channel can be linked to forum. Also, profiles from slide and forum "
-"are regrouped together"
-msgstr ""
-
-#. module: base
 #: code:addons/models.py:0
 #, python-format
 msgid "A document was modified since you last viewed it (%s:%d)"
@@ -7039,21 +6847,6 @@ msgid "Add cash basis functionality for reports"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_website_slides_survey
-msgid "Add certification capabilities to your courses"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_hr_skills_survey
-msgid "Add certification to resumé of your employees"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_hr_skills_slides
-msgid "Add completed courses to resumé of your employees"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_social_crm
 msgid "Add crm UTM info on social"
 msgstr ""
@@ -7186,77 +6979,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_contacts_enterprise
 msgid "Adds notably the map view of contact"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_auth_ldap
-msgid ""
-"Adds support for authentication by LDAP server.\n"
-"===============================================\n"
-"This module allows users to login with their LDAP username and password, and\n"
-"will automatically create Odoo users for them on the fly.\n"
-"\n"
-"**Note:** This module only work on servers that have Python's ``python-ldap`` module installed.\n"
-"\n"
-"Configuration:\n"
-"--------------\n"
-"After installing this module, you need to configure the LDAP parameters in the\n"
-"General Settings menu. Different companies may have different\n"
-"LDAP servers, as long as they have unique usernames (usernames need to be unique\n"
-"in Odoo, even across multiple companies).\n"
-"\n"
-"Anonymous LDAP binding is also supported (for LDAP servers that allow it), by\n"
-"simply keeping the LDAP user and password empty in the LDAP configuration.\n"
-"This does not allow anonymous authentication for users, it is only for the master\n"
-"LDAP account that is used to verify if a user exists before attempting to\n"
-"authenticate it.\n"
-"\n"
-"Securing the connection with STARTTLS is available for LDAP servers supporting\n"
-"it, by enabling the TLS option in the LDAP configuration.\n"
-"\n"
-"For further options configuring the LDAP settings, refer to the ldap.conf\n"
-"manpage: manpage:`ldap.conf(5)`.\n"
-"\n"
-"Security Considerations:\n"
-"------------------------\n"
-"Users' LDAP passwords are never stored in the Odoo database, the LDAP server\n"
-"is queried whenever a user needs to be authenticated. No duplication of the\n"
-"password occurs, and passwords are managed in one place only.\n"
-"\n"
-"Odoo does not manage password changes in the LDAP, so any change of password\n"
-"should be conducted by other means in the LDAP directory directly (for LDAP users).\n"
-"\n"
-"It is also possible to have local Odoo users in the database along with\n"
-"LDAP-authenticated users (the Administrator account is one obvious example).\n"
-"\n"
-"Here is how it works:\n"
-"---------------------\n"
-"    * The system first attempts to authenticate users against the local Odoo\n"
-"      database;\n"
-"    * if this authentication fails (for example because the user has no local\n"
-"      password), the system then attempts to authenticate against LDAP;\n"
-"\n"
-"As LDAP users have blank passwords by default in the local Odoo database\n"
-"(which means no access), the first step always fails and the LDAP server is\n"
-"queried to do the authentication.\n"
-"\n"
-"Enabling STARTTLS ensures that the authentication query to the LDAP server is\n"
-"encrypted.\n"
-"\n"
-"User Template:\n"
-"--------------\n"
-"In the LDAP configuration on the General Settings, it is possible to select a *User\n"
-"Template*. If set, this user will be used as template to create the local users\n"
-"whenever someone authenticates for the first time via LDAP authentication. This\n"
-"allows pre-setting the default groups and menus of the first-time users.\n"
-"\n"
-"**Warning:** if you set a password for the user template, this password will be\n"
-"         assigned as local password for each new LDAP user, effectively setting\n"
-"         a *master password* for these users (until manually changed). You\n"
-"         usually do not want this. One easy way to setup a template user is to\n"
-"         login once with a valid LDAP user, let Odoo create a blank local\n"
-"         user with the same login (and a blank password), then rename this new\n"
-"         user to a username that does not exist in LDAP, and setup its groups\n"
 msgstr ""
 
 #. module: base
@@ -7503,11 +7225,6 @@ msgid ""
 msgstr ""
 "ব্যবহারকারীর ওয়েবসাইট প্রোফাইল অ্যাক্সেস করতে এবং তাদের পরিসংখ্যান (কর্মফল,"
 " ব্যাজ ইত্যাদি) দেখতে দেয়"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_slides_forum
-msgid "Allows to link forum on a course"
-msgstr "একটি কোর্সে ফোরাম লিঙ্ক করার অনুমতি দেয়"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_coupon_delivery
@@ -7991,11 +7708,6 @@ msgid "Authentication"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_auth_ldap
-msgid "Authentication via LDAP"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module__author
 #: model_terms:ir.ui.view,arch_db:base.view_module_filter
 msgid "Author"
@@ -8297,11 +8009,6 @@ msgid "Base"
 msgstr "ভিত্তি"
 
 #. module: base
-#: model:ir.module.module,summary:base.module_test_base_automation
-msgid "Base Automation Tests: Ensure Flow Robustness"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_model_fields__state__base
 msgid "Base Field"
 msgstr ""
@@ -8407,10 +8114,6 @@ msgstr ""
 msgid "Belarus"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat
-msgid "Belgian Intrastat Declaration"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_proration
@@ -8806,11 +8509,6 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_calendar
 msgid "Calendar"
 msgstr "পুঞ্জিকা"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_calendar_sms
-msgid "Calendar - SMS"
-msgstr ""
 
 #. module: base
 #: model:res.country,name:base.kh
@@ -9796,10 +9494,6 @@ msgstr ""
 msgid "Contacts require a name"
 msgstr ""
 
-#. module: base
-#: model_terms:ir.ui.view,arch_db:base.module_form
-msgid "Contains In-App Purchases"
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_filters__context
@@ -9940,11 +9634,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_coupon
 msgid "Coupons & Promotions for eCommerce"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_slides_survey
-msgid "Course Certifications"
 msgstr ""
 
 #. module: base
@@ -12171,10 +11860,6 @@ msgstr ""
 msgid "Fed. States"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_delivery_fedex
-msgid "Fedex Shipping"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_fr_fec
@@ -12734,11 +12419,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_forum
 msgid "Forum"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_slides_forum
-msgid "Forum on Courses"
 msgstr ""
 
 #. module: base
@@ -14113,11 +13793,6 @@ msgid "Implementation"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_base_sparse_field
-msgid "Implementation of sparse fields."
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_pos_blackbox_be
 msgid ""
 "Implements the registered cash system, adhering to guidelines by FPS "
@@ -14197,11 +13872,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__modules
 msgid "In Apps"
 msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_iap
-msgid "In-App Purchases"
-msgstr "ইন-অ্যাপ ক্রয়"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_currency_search
@@ -14543,11 +14213,6 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron__interval_type
 msgid "Interval Unit"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_intrastat
-msgid "Intrastat Reports"
 msgstr ""
 
 #. module: base
@@ -15977,11 +15642,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_website_slides
-msgid "Manage and publish an eLearning platform"
-msgstr ""
-
-#. module: base
 #: model_terms:ir.actions.act_window,help:base.action_res_bank_form
 msgid "Manage bank records you want to be used in the system."
 msgstr ""
@@ -16194,16 +15854,6 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.mq
 msgid "Martinique"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_mass_mailing
-msgid "Mass Mail Tests"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_test_mass_mailing
-msgid "Mass Mail Tests: feature and performance tests for mass mailing"
 msgstr ""
 
 #. module: base
@@ -16983,16 +16633,6 @@ msgid "Netherlands - Accounting Reports"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_nl_intrastat
-msgid "Netherlands Intrastat Declaration"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_nl_report_intrastat
-msgid "Netherlands Intrastat Declaration Reports"
-msgstr ""
-
-#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form_simple_modif
 msgid "New API Key"
 msgstr ""
@@ -17340,11 +16980,6 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_O
 msgid "O PUBLIC ADMINISTRATION AND DEFENCE;COMPULSORY SOCIAL SECURITY"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_auth_oauth
-msgid "OAuth2 Authentication"
 msgstr ""
 
 #. module: base
@@ -19678,10 +19313,6 @@ msgstr ""
 msgid "Prefix value of the record for the sequence"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,summary:base.module_website_twitter_wall
-msgid "Pretty Way to Display Tweets for Event"
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_layout__image
@@ -20051,11 +19682,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_requisition
 msgid "Purchase Agreements"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_purchase_intrastat
-msgid "Purchase Intrastat"
 msgstr ""
 
 #. module: base
@@ -21054,11 +20680,6 @@ msgid "Sale"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_be_sale_intrastat
-msgid "Sale BE Intrastat Bridge"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_coupon
 msgid "Sale Coupon"
 msgstr ""
@@ -21068,10 +20689,6 @@ msgstr ""
 msgid "Sale Coupon Delivery"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_intrastat
-msgid "Sale Intrastat"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_product_matrix
@@ -21457,11 +21074,6 @@ msgid "Self"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_sale_slides
-msgid "Sell Courses"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_helpdesk_sale_timesheet
 msgid "Sell Helpdesk Timesheet"
 msgstr ""
@@ -21479,16 +21091,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_sale
 msgid "Sell event tickets online"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_sale_slides
-msgid "Sell your courses online"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_sale_slides
-msgid "Sell your courses using the e-commerce features of the website."
 msgstr ""
 
 #. module: base
@@ -21520,12 +21122,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_calendar_sms
-#: model:ir.module.module,summary:base.module_calendar_sms
-msgid "Send text messages as event reminders"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_stock_sms
 #: model:ir.module.module,summary:base.module_stock_sms
 msgid "Send text messages when final stock move"
@@ -21539,16 +21135,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
 msgid "Send your shippings through DHL and track them online"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_delivery_fedex
-msgid "Send your shippings through Fedex and track them online"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_delivery_ups
-msgid "Send your shippings through UPS and track them online"
 msgstr ""
 
 #. module: base
@@ -21856,18 +21442,8 @@ msgid "Size of the field cannot be negative."
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_hr_skills_survey
-msgid "Skills Certification"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_skills
 msgid "Skills Management"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_hr_skills_slides
-msgid "Skills e-learning"
 msgstr ""
 
 #. module: base
@@ -22045,11 +21621,6 @@ msgid "Spain - Accounting (PGCE 2008) Reports"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_base_sparse_field
-msgid "Sparse Fields"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,help:base.field_res_users__new_password
 msgid ""
 "Specify a value only when creating a user or if you're changing the user's "
@@ -22203,11 +21774,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode_mobile
 msgid "Stock Barcode scan in Mobile"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_stock_intrastat
-msgid "Stock Intrastat"
 msgstr ""
 
 #. module: base
@@ -22662,11 +22228,6 @@ msgid "Template Name"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_test_base_automation
-msgid "Test - Base Automation"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_test_new_api
 msgid "Test API"
 msgstr ""
@@ -22695,11 +22256,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_event_full
 msgid "Test Full Event Flow"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_website_slides_full
-msgid "Test Full eLearning Flow"
 msgstr ""
 
 #. module: base
@@ -23418,14 +22974,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_test_base_automation
-msgid ""
-"This module contains tests related to base automation. Those are\n"
-"present in a separate module as it contains models used only to perform\n"
-"tests independently to functional aspects of other models."
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_test_mail
 msgid ""
 "This module contains tests related to mail. Those are\n"
@@ -23436,13 +22984,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_test_mail_enterprise
 
-#. module: base
-#: model:ir.module.module,description:base.module_test_mass_mailing
-msgid ""
-"This module contains tests related to mass mailing. Those\n"
-"are present in a separate module to use specific test models defined in\n"
-"test_mail. "
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_web_grid
@@ -23527,12 +23068,6 @@ msgid ""
 "    "
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,description:base.module_website_slides_survey
-msgid ""
-"This module lets you use the full power of certifications within your "
-"courses."
-msgstr ""
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_base_module_upgrade
@@ -23620,12 +23155,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_timesheet_holidays
 msgid "Timesheet when on Time Off"
-msgstr ""
-
-#. module: base
-#: model:ir.module.category,name:base.module_category_services_timesheets
-#: model:ir.module.module,shortdesc:base.module_timesheet_grid
-msgid "Timesheets"
 msgstr ""
 
 #. module: base
@@ -23773,12 +23302,6 @@ msgid "Track employee attendance"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_hr_timesheet
-#: model:ir.module.module,summary:base.module_timesheet_grid
-msgid "Track employee time on tasks"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_maintenance
 msgid "Track equipment and manage maintenance requests"
 msgstr ""
@@ -23827,11 +23350,6 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "Transient: True"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_transifex
-msgid "Transifex integration"
 msgstr ""
 
 #. module: base
@@ -23981,21 +23499,6 @@ msgid "Tuvalu"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_twitter
-msgid "Twitter Snippet"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_twitter_wall
-msgid "Twitter Wall"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_twitter
-msgid "Twitter scroller snippet in website"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_totp
 msgid "Two-Factor Authentication (TOTP)"
 msgstr ""
@@ -24063,11 +23566,6 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_product_unspsc
 #: model:ir.module.module,summary:base.module_product_unspsc
 msgid "UNSPSC product codes"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_delivery_ups
-msgid "UPS Shipping"
 msgstr ""
 
 #. module: base
@@ -25796,12 +25294,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_delivery
 msgid "eCommerce Delivery"
-msgstr ""
-
-#. module: base
-#: model:ir.module.category,name:base.module_category_website_elearning
-#: model:ir.module.module,shortdesc:base.module_website_slides
-msgid "eLearning"
 msgstr ""
 
 #. module: base

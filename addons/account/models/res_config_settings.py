@@ -54,8 +54,6 @@ class ResConfigSettings(models.TransientModel):
         "Show line subtotals with taxes (B2C)",
         implied_group='account.group_show_line_subtotals_tax_included',
         group='base.group_portal,base.group_user,base.group_public')
-    group_show_sale_receipts = fields.Boolean(string='Sale Receipt',
-        implied_group='account.group_sale_receipts')
     group_show_purchase_receipts = fields.Boolean(string='Purchase Receipt',
         implied_group='account.group_purchase_receipts')
     show_line_subtotals_tax_selection = fields.Selection([
@@ -78,7 +76,7 @@ class ResConfigSettings(models.TransientModel):
     module_account_bank_statement_import_csv = fields.Boolean("Import in .csv format")
     module_account_bank_statement_import_camt = fields.Boolean("Import in CAMT.053 format")
     module_currency_rate_live = fields.Boolean(string="Automatic Currency Rates")
-    module_account_intrastat = fields.Boolean(string='Intrastat')
+    # module_account_intrastat = fields.Boolean(string='Intrastat')
     module_product_margin = fields.Boolean(string="Allow Product Margin")
     module_l10n_eu_service = fields.Boolean(string="EU Digital Goods VAT")
     module_account_taxcloud = fields.Boolean(string="Account TaxCloud")

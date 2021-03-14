@@ -199,7 +199,6 @@ Maybe you wonder how it is possible to create chains of more than two moves this
 
 This makes it possible to create long chains.  For example, an MTS product with pick pack ship, will start with the confirmation of a sales order.  This will create a procurement, which will create a move from Output to Customers with procurement method "Apply procurement rules".  This will create procurement in Output.  This will continue like this until the procurement in Pack creates a stock move, which will have "Take from stock" instead.
 
-<< Illustrate one from the chains from the Google Doc or the presentation of 2014 Open Days (see slideshare.net) shows this (and also how it is configured using routes)
 
 
 

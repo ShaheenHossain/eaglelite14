@@ -33,7 +33,6 @@
                 <we-button data-mode="slideshow" data-name="slideshow_mode_opt">Slideshow</we-button>
             </we-select>
             <we-input string="Speed"
-                  data-dependencies="slideshow_mode_opt"
                   data-apply-to=".carousel:first"
                   data-select-data-attribute="0s" data-attribute-name="interval"
                   data-unit="s" data-save-unit="ms" data-step="0.1"/>
@@ -45,7 +44,7 @@
                 <we-button data-columns="6">6</we-button>
                 <we-button data-columns="12">12</we-button>
             </we-select>
-            <we-select string="Images spacing" data-dependencies="!slideshow_mode_opt">
+            <we-select string="Images spacing">
                 <we-button data-select-class="o_spc-none">None</we-button>
                 <we-button data-select-class="o_spc-small">Small</we-button>
                 <we-button data-select-class="o_spc-medium">Medium</we-button>
@@ -57,13 +56,13 @@
                 <we-button data-select-class="rounded-pill">Circle</we-button>
                 <we-button data-select-class="shadow">Shadows</we-button>
             </we-select>
-            <we-select string="Arrows" data-dependencies="slideshow_mode_opt">
+            <we-select string="Arrows">
                 <we-button data-select-class="">Standard</we-button>
                 <we-button data-select-class="s_image_gallery_indicators_arrows_boxed">Boxed</we-button>
                 <we-button data-select-class="s_image_gallery_indicators_arrows_rounded">Rounded</we-button>
             </we-select>
-            <we-checkbox string="Image Cover" data-select-class="s_image_gallery_cover" data-dependencies="slideshow_mode_opt"/>
-            <we-select string="Indicators" data-dependencies="slideshow_mode_opt">
+            <we-checkbox string="Image Cover" data-select-class="s_image_gallery_cover"/>
+            <we-select string="Indicators" >
                 <we-button data-select-class="">None</we-button>
                 <we-button data-select-class="s_image_gallery_show_indicators s_image_gallery_indicators_dots">Dots</we-button>
                 <we-button data-select-class="s_image_gallery_show_indicators">Squared Miniatures</we-button>

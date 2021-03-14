@@ -37,7 +37,6 @@ class DeliveryCarrier(models.Model):
     name = fields.Char('Delivery Method', required=True, translate=True)
     active = fields.Boolean(default=True)
     sequence = fields.Integer(help="Determine the display order", default=10)
-    # This field will be overwritten by internal shipping providers by adding their own type (ex: 'fedex')
     delivery_type = fields.Selection([('fixed', 'Fixed Price')], string='Provider', default='fixed', required=True)
     integration_level = fields.Selection([('rate', 'Get Rate'), ('rate_and_ship', 'Get Rate and Create Shipment')], string="Integration Level", default='rate_and_ship', help="Action while validating Delivery Orders")
     prod_environment = fields.Boolean("Environment", help="Set to True if your credentials are certified for production.")
