@@ -43,18 +43,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12 o_setting_box" id="quality_control">
-                                <div class="o_setting_left_pane">
-                                    <field name="module_quality_control" widget="upgrade_boolean"/>
-                                </div>
-                                <div class="o_setting_right_pane">
-                                    <label for="module_quality_control"/>
-                                    <a href="https://www.odoo.com/documentation/user/14.0/quality.html" title="Documentation" class="o_doc_link" target="_blank"></a>
-                                    <div class="text-muted">
-                                        Add quality checks to your work orders
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-lg-6 col-12 o_setting_box" id="mrp_lock" title="Makes confirmed manufacturing orders locked rather than unlocked by default. This only applies to new manufacturing orders, not previously created ones.">
                                 <div class="o_setting_left_pane">
                                     <field name="group_locked_by_default"/>

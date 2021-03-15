@@ -96,8 +96,6 @@ QUnit.module('Google Calendar', {
                     return Promise.resolve({status: 'need_refresh'});
                 } else if (route === '/web/dataset/call_kw/calendar.event/search_read') {
                     assert.step(route);
-                } else if (route === '/microsoft_calendar/sync_data') {
-                    return Promise.resolve();
                 }
                 return this._super.apply(this, arguments);
             },

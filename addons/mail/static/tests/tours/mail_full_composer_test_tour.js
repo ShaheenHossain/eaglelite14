@@ -12,7 +12,6 @@ const tour = require('web_tour.tour');
  * This tour depends on data created by python test in charge of launching it.
  * It is not intended to work when launched from interface. It is needed to test
  * an action (action manager) which is not possible to test with QUnit.
- * @see mail/tests/test_mail_full_composer.py
  */
 tour.register('mail/static/tests/tours/mail_full_composer_test_tour.js', {
     test: true,

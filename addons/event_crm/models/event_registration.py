@@ -270,25 +270,7 @@ class EventRegistration(models.Model):
 
     def _get_lead_grouping(self, rules, rule_to_new_regs):
         """ Perform grouping of registrations in order to enable order-based
-        lead creation and update existing groups with new registrations.
-
-        Heuristic in event is the following. Registrations created in multi-mode
-        are grouped by event. Customer use case: website_event flow creates
-        several registrations in a create-multi.
-
-        Update is not supported as there is no way to determine if a registration
-        is part of an existing batch.
-
-        :param rules: lead creation rules to run on registrations given by self;
-        :param rule_to_new_regs: dict: for each rule, subset of self matching
-          rule conditions. Used to speedup batch computation;
-
-        :return dict: for each rule, rule (key of dict) gives a list of groups.
-          Each group is a tuple (
-            existing_lead: existing lead to update;
-            group_record: record used to group;
-            registrations: sub record set of self, containing registrations
-                           belonging to the same group;
+                                   belonging to the same group;
           )
         """
         event_to_reg_ids = defaultdict(lambda: self.env['event.registration'])

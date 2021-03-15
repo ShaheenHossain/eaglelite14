@@ -535,15 +535,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_website_event_crm_questions
-msgid ""
-"\n"
-"        Add information when we build the description of a lead to include\n"
-"        the questions and answers linked to the registrations.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_l10n_mx_reports_closing
 msgid ""
 "\n"
@@ -809,34 +800,10 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_mrp_subcontracting_dropshipping
-msgid ""
-"\n"
-"        This bridge module allows to manage subcontracting with the dropshipping module.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_mrp_subcontracting_account
-msgid ""
-"\n"
-"        This bridge module allows to manage subcontracting with valuation.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_stock_barcode_mrp_subcontracting
 msgid ""
 "\n"
 "        This bridge module is auto-installed when the modules stock_barcode and mrp_subcontracting are installed.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_stock_barcode_quality_control
-msgid ""
-"\n"
-"        This bridge module is auto-installed when the modules stock_barcode and quality_control are installed.\n"
 "    "
 msgstr ""
 
@@ -1581,18 +1548,6 @@ msgid ""
 "=============================================================================================================================\n"
 "\n"
 "The wizard to launch the report has several options to help you get the data you need.\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_pad
-msgid ""
-"\n"
-"Adds enhanced support for (Ether)Pad attachments in the web client.\n"
-"===================================================================\n"
-"\n"
-"Lets the company customize which Pad installation should be used to link to new\n"
-"pads (by default, http://etherpad.com/).\n"
-"    "
 msgstr ""
 
 #. module: base
@@ -3112,24 +3067,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_stock_dropshipping
-msgid ""
-"\n"
-"Manage drop shipping orders\n"
-"===========================\n"
-"\n"
-"This module adds a pre-configured Drop Shipping operation type\n"
-"as well as a procurement route that allow configuring Drop\n"
-"Shipping products and orders.\n"
-"\n"
-"When drop shipping is used the goods are directly transferred\n"
-"from vendors to customers (direct delivery) without\n"
-"going through the retailer's warehouse. In this case no\n"
-"internal transfer document is needed.\n"
-"\n"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_hr_expense
 msgid ""
 "\n"
@@ -3767,19 +3704,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_quality_control
-msgid ""
-"\n"
-"Quality Control\n"
-"===============\n"
-"* Define quality points that will generate quality checks on pickings,\n"
-"  manufacturing orders or work orders (quality_mrp)\n"
-"* Quality alerts can be created independently or related to quality checks\n"
-"* Possibility to add a measure to the quality check with a min/max tolerance\n"
-"* Define your stages for the quality alerts\n"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_hr_payroll_expense
 msgid ""
 "\n"
@@ -3866,32 +3790,12 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_sale_subscription_dashboard
-msgid ""
-"\n"
-"Sale Subscription Dashboard\n"
-"===========================\n"
-"It adds dashboards to :\n"
-"1) Analyse the recurrent revenue and other metrics for subscriptions\n"
-"2) Analyse the subscriptions modifications by salesman and compute their value.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_website_sale_digital
 msgid ""
 "\n"
 "Sell e-goods in your eCommerce store (e.g. webinars, articles, e-books, video tutorials).\n"
 "To do so, create the product and attach the file to share via the *Files* button of the product form.\n"
 "Once the order is paid, the file is made available in the order confirmation page and in the customer portal.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_event_sale
-msgid ""
-"\n"
-"Sell event tickets through eCommerce app.\n"
 "    "
 msgstr ""
 
@@ -4082,14 +3986,6 @@ msgid ""
 "\n"
 "The kernel of Odoo, needed for all installation.\n"
 "===================================================\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_microsoft_account
-msgid ""
-"\n"
-"The module adds Microsoft user in res user.\n"
-"===========================================\n"
 msgstr ""
 
 #. module: base
@@ -4522,15 +4418,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_pad_project
-msgid ""
-"\n"
-"This module adds a PAD in all project form views.\n"
-"=================================================\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_website_sale_comparison
 msgid ""
 "\n"
@@ -4793,18 +4680,6 @@ msgid ""
 "It is integrated with sales and accounting to allow you to automatically\n"
 "invoice and send propositions for membership renewal.\n"
 "    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_sale_subscription
-msgid ""
-"\n"
-"This module allows you to manage subscriptions.\n"
-"\n"
-"Features:\n"
-"    - Create & edit subscriptions\n"
-"    - Modify subscriptions with sales orders\n"
-"    - Generate invoice automatically at fixed intervals\n"
 msgstr ""
 
 #. module: base
@@ -5194,13 +5069,6 @@ msgid ""
 "\n"
 "Use budgets to compare actual with expected revenues and costs\n"
 "--------------------------------------------------------------\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_quality_control_iot
-msgid ""
-"\n"
-"Use devices connected to an IoT Box to control the quality of your products.\n"
 msgstr ""
 
 #. module: base
@@ -6807,11 +6675,6 @@ msgid "Add OdooBot in discussions"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_sale_subscription_sepa_direct_debit
-msgid "Add SEPA Direct Debit as payment method to subscriptions"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_crm_sms
 msgid "Add SMS capabilities to CRM"
 msgstr ""
@@ -7012,16 +6875,6 @@ msgid "Advanced Address Formatting"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_website_event_track_gantt
-msgid "Advanced Event Track Management"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track
-msgid "Advanced Events"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_purchase_enterprise
 msgid "Advanced Features for Purchase Management"
 msgstr ""
@@ -7173,11 +7026,6 @@ msgid "Allow payslip edition"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_website_event_crm
-msgid "Allow per-order lead creation mode"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_website_sale_comparison
 msgid "Allow shoppers to compare products based on their attributes"
 msgstr ""
@@ -7206,11 +7054,6 @@ msgstr "অনুমোদিত সংস্থা"
 #: model:ir.module.module,summary:base.module_stock_barcode_mrp_subcontracting
 msgid "Allows the subcontracting process with the barcode views"
 msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_stock_barcode_quality_control
-msgid "Allows the usage of quality checks within the barcode views"
-msgstr "বারকোড দর্শনগুলির মধ্যে মানের চেকগুলির ব্যবহারের অনুমতি দেয়"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_map
@@ -7964,11 +7807,6 @@ msgid "Barcode"
 msgstr "বারকোড"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_stock_barcode_quality_control
-msgid "Barcode Quality bridge module"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_barcode_picking_batch
 msgid "Barcode for Batch Transfer"
 msgstr ""
@@ -7993,11 +7831,6 @@ msgstr ""
 #: code:addons/base/models/ir_qweb_fields.py:0
 #, python-format
 msgid "Barcode type, eg: UPCA, EAN13, Code128"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_stock_barcode_quality_control_picking_batch
-msgid "Barcode/Quality/Batch Transfer bridge module"
 msgstr ""
 
 #. module: base
@@ -8319,11 +8152,6 @@ msgstr ""
 msgid "Brazilian - Accounting"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,description:base.module_iap_crm
-#: model:ir.module.module,summary:base.module_iap_crm
-msgid "Bridge between IAP and CRM"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_accountant
@@ -8359,21 +8187,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_project_enterprise
 msgid "Bridge module for project and enterprise"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_twitter_wall
-msgid "Bridge module to configure a twitter wall on your event"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_social
-msgid "Bridge module to push notifications to event attendees"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_track_live_quiz
-msgid "Bridge module to support quiz features during \"live\" tracks. "
 msgstr ""
 
 #. module: base
@@ -8953,11 +8766,6 @@ msgid "Cohort View"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_pad
-msgid "Collaborative Pads"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_account_sepa_direct_debit
 msgid "Collect payments from your customers through SEPA direct debit."
 msgstr ""
@@ -9226,10 +9034,6 @@ msgstr ""
 msgid "Compute scores and assign leads automatically"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,summary:base.module_sale_subscription_taxcloud
-msgid "Compute taxes with TaxCloud after automatic invoice creation."
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_taxcloud_delivery
@@ -9297,11 +9101,6 @@ msgstr ""
 #: model:ir.model,name:base.model_ir_actions_todo
 #: model:ir.ui.menu,name:base.menu_ir_actions_todo_form
 msgid "Configuration Wizards"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_twitter_wall
-msgid "Configure a Twitter Wall on your Event"
 msgstr ""
 
 #. module: base
@@ -9528,15 +9327,6 @@ msgstr ""
 msgid "Contributors"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,summary:base.module_quality_control
-msgid "Control the quality of your products"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_quality_control_iot
-msgid "Control the quality of your products with IoT devices"
-msgstr ""
 
 #. module: base
 #: model:res.country,name:base.ck
@@ -9656,12 +9446,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_ir_model_relation__create_date
 #: model:ir.model.fields,field_description:base.field_res_users__create_date
 msgid "Create Date"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_jitsi
-#: model:ir.module.module,summary:base.module_website_jitsi
-msgid "Create Jitsi room on website."
 msgstr ""
 
 #. module: base
@@ -11082,20 +10866,9 @@ msgid "Dr."
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_stock_dropshipping
-#: model:ir.module.module,summary:base.module_stock_dropshipping
-msgid "Drop Shipping"
-msgstr ""
-
-#. module: base
 #: model_terms:ir.ui.view,arch_db:base.module_view_kanban
 msgid "Dropdown menu"
 msgstr "ড্রপডাউন মেনু"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_mrp_subcontracting_dropshipping
-msgid "Dropship and Subcontracting Management"
-msgstr ""
 
 #. module: base
 #: code:addons/base/models/ir_rule.py:0
@@ -11392,11 +11165,6 @@ msgid "Enter a description of and purpose for the key."
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track_gantt
-msgid "Enterprise Event Track"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_enterprise_partner_assign
 msgid "Enterprise Resellers"
 msgstr ""
@@ -11533,31 +11301,6 @@ msgstr ""
 msgid "Event CRM Sale"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track_exhibitor
-msgid "Event Exhibitors"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_meet
-msgid "Event Meeting / Rooms"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_meet
-msgid "Event: meeting and chat rooms"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_track_exhibitor
-msgid "Event: upgrade sponsors to exhibitors"
-msgstr ""
-
-#. module: base
-#: model:ir.module.category,name:base.module_category_marketing_events
-#: model:ir.module.module,shortdesc:base.module_website_event
-msgid "Events"
-msgstr "ঘটনাবলী"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event
@@ -12654,11 +12397,6 @@ msgid "Generate leads from a contact form"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_sale_subscription
-msgid "Generate recurring invoices and manage renewals"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_website_links
 msgid "Generate trackable & short URLs"
 msgstr ""
@@ -13389,11 +13127,6 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_I
 msgid "I ACCOMMODATION AND FOOD SERVICE ACTIVITIES"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_iap_crm
-msgid "IAP / CRM"
 msgstr ""
 
 #. module: base
@@ -15274,11 +15007,6 @@ msgid "Live Currency Exchange Rate"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track_live
-msgid "Live Event Tracks"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_enterprise
 msgid "Live chat enterprise"
 msgstr ""
@@ -15447,21 +15175,10 @@ msgstr ""
 msgid "Mail Tests (Enterprise)"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_mail_full
-msgid "Mail Tests (Full)"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_mail
 msgid "Mail Tests: performances and tests specific to mail"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_test_mail_enterprise
-#: model:ir.module.module,summary:base.module_test_mail_full
-msgid ""
-"Mail Tests: performances and tests specific to mail with all sub-modules"
 msgstr ""
 
 #. module: base
@@ -16017,11 +15734,6 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.fm
 msgid "Micronesia"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_microsoft_account
-msgid "Microsoft Users"
 msgstr ""
 
 #. module: base
@@ -18209,10 +17921,6 @@ msgstr ""
 msgid "Online Bank Statement Synchronization"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_sale
-msgid "Online Event Ticketing"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_hr_recruitment
@@ -18398,169 +18106,6 @@ msgid "Order"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_website_event_track
-msgid ""
-"Organize Events, Trainings & Webinars\n"
-"-------------------------------------\n"
-"\n"
-"### Schedule, Promote, Sell, Organize\n"
-"\n"
-"Get extra features per event; multiple pages, sponsors, multiple talks, talk proposal form, agenda, event-related news, documents (slides of presentations), event-specific menus.\n"
-"\n"
-"Organize Your Tracks\n"
-"--------------------\n"
-"\n"
-"### From the talk proposal to the publication\n"
-"\n"
-"Add a talk proposal form on your events to allow visitors to submit talks and speakers. Organize the validation process of every talk, and schedule easily.\n"
-"\n"
-"Odoo's unique frontend and backend integration makes organization and publication so easy. Easily design beautiful speaker biographies and talks description.\n"
-"\n"
-"Agenda and List of Talks\n"
-"------------------------\n"
-"\n"
-"### A strong user interface\n"
-"\n"
-"Get a beautiful agenda for each event published automatically on your website. Allow your visitors to easily search and browse talks, filter by tags, locations or speakers.\n"
-"\n"
-"Manage Sponsors\n"
-"---------------\n"
-"\n"
-"### Sell sponsorship, promote your sponsors\n"
-"\n"
-"Add sponsors to your events and publish sponsors per level (e.g. bronze, silver, gold) on the bottom of every page of the event.\n"
-"\n"
-"Sell sponsorship packages online through the Odoo eCommerce for a full sales cycle integration.\n"
-"\n"
-"Communicate Efficiently\n"
-"-----------------------\n"
-"\n"
-"### Activate a blog for some events\n"
-"\n"
-"You can activate a blog for each event allowing you to communicate on specific events. Visitors can subscribe to news to get informed."
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_event
-msgid ""
-"Organize Events, Trainings & Webinars\n"
-"-------------------------------------\n"
-"\n"
-"### Schedule, Promote, Sell, Organize\n"
-"\n"
-"Organize, promote and sell events online. Whether you organize meetings, conferences, trainings or webinars, Odoo gives you all the features you need to manage your events.\n"
-"\n"
-"Create Awesome Event Pages\n"
-"--------------------------\n"
-"\n"
-"### Get rid of old WYSIWYG editors\n"
-"\n"
-"Create beautiful event pages by drag & droping well designed *'Building Blocks'*. Publish event photos, speakers, schedule, etc.\n"
-"\n"
-"Odoo's unique *'edit inline'* approach makes website creation surprisingly easy. \"Want to introduce a speaker? to change the price of a ticket? to update a banner? promote sponsors?\" just click and change.\n"
-"\n"
-"Sell Tickets Online\n"
-"-------------------\n"
-"\n"
-"### Automate the registration and payment process\n"
-"\n"
-"Sell registrations to your event with the multi-ticketing feature. Events can be free or for a fee. Attendees can pay online with a credit card or on invoice, based on your configuration.\n"
-"\n"
-"Boost your sales with early-bird prices, special conditions for members, or extra services with multiple tickets.\n"
-"\n"
-"A Clean Google Analytics Integration\n"
-"------------------------------------\n"
-"\n"
-"### Control your sales funnel with Google Analytics\n"
-"\n"
-"Get a clear visibility of your sales funnel. Odoo's Google Analytics trackers are configured by default to track all kind of events related to shopping carts, call-to-actions, etc.\n"
-"\n"
-"As Odoo marketing tools (mass mailing, campaigns, etc) are also linked with Google Analytics, you get a full view of your business.\n"
-"\n"
-"Promote Events Efficiently\n"
-"--------------------------\n"
-"\n"
-"### Mass Mailing & Social Media\n"
-"\n"
-"Use the segmentation, the social network integration and mass mailing features to promote your events to the right audience. Setup automated emails to attendees to send them last minute details.\n"
-"\n"
-"Designer-Friendly Themes\n"
-"------------------------\n"
-"\n"
-"### Designers love working on Odoo\n"
-"\n"
-"Themes are awesome and easy to design. You don't need to develop to create new pages, themes or building blocks. We use a clean HTML structure, a [bootstrap](http://getbootstrap.com/) CSS and our modularity allows to distribute your themes easily.\n"
-"\n"
-"The building block approach allows the website to stay clean after the end-users start creating new contents.\n"
-"\n"
-"Make Your Event More Visible\n"
-"----------------------------\n"
-"\n"
-"### SEO tools at your finger tips\n"
-"\n"
-"SEO tools are ready to use, with no configuration required. Odoo suggests keywords according to Google most searched terms, Google Analytics tracks your shopping cart events and sitemap are created automatically.\n"
-"\n"
-"We even do structured content automatically to promote your events and products efficiently in Google.\n"
-"\n"
-"Leverage Social Media\n"
-"---------------------\n"
-"\n"
-"### Optimize: from Ads to Conversions\n"
-"\n"
-"Create new landing pages easily with the Odoo inline editing feature. Send visitors of your different marketing campaigns to event landing pages to optimize conversions.\n"
-"\n"
-"And Much More...\n"
-"----------------\n"
-"\n"
-"### Schedule\n"
-"\n"
-"-   Calendar of Events\n"
-"-   Publish related documents\n"
-"-   Ressources allocation\n"
-"-   Automate purchases (catering...)\n"
-"-   Multiple locations and organizers\n"
-"-   Mobile Interface\n"
-"\n"
-"### Sell\n"
-"\n"
-"-   Online or offline sales\n"
-"-   Automated invoicing\n"
-"-   Cancellation policies\n"
-"-   Specific prices for members\n"
-"-   Dashboards and reporting\n"
-"\n"
-"### Organize\n"
-"\n"
-"-   Advanced Planification\n"
-"-   Print Badges\n"
-"-   Automate Follow-up Emails\n"
-"-   Min/Max capacities\n"
-"-   Manage classes and ressources\n"
-"-   Create group of attendees\n"
-"-   Automate statisfaction surveys\n"
-"\n"
-"Fully Integrated With Others Apps\n"
-"---------------------------------\n"
-"\n"
-"### Get hundreds of open source apps for free\n"
-"\n"
-"\n"
-"### eCommerce\n"
-"\n"
-"Promote products, sell online, optimize visitors' shopping experiences.\n"
-"\n"
-"\n"
-"### Blogs\n"
-"\n"
-"Write news, attract new visitors, build customer loyalty.\n"
-"\n"
-"\n"
-"### Our Team\n"
-"\n"
-"Create a great \"About us\" page by presenting your team efficiently.\n"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_project
 msgid "Organize and plan your projects"
 msgstr ""
@@ -18651,11 +18196,6 @@ msgid "Outgoing Mail Servers"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_microsoft_calendar
-msgid "Outlook Calendar"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat__dpi
 msgid "Output DPI"
 msgstr ""
@@ -18726,11 +18266,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_six
 msgid "POS Six"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_pad_project
-msgid "Pad on tasks"
 msgstr ""
 
 #. module: base
@@ -19642,11 +19177,6 @@ msgid "Publish blog posts, announces, news"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_website_event
-msgid "Publish events, sell tickets"
-msgstr "ইভেন্ট প্রকাশ করুন, টিকিট বিক্রয় করুন"
-
-#. module: base
 #: model:ir.module.module,summary:base.module_website_customer
 msgid "Publish your customer references"
 msgstr ""
@@ -19725,11 +19255,6 @@ msgid "Purchase orders, tenders and agreements"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track_social
-msgid "Push notification to track listeners"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__code
 #: model:ir.model.fields,field_description:base.field_ir_cron__code
 #: model_terms:ir.ui.view,arch_db:base.view_server_action_form
@@ -19767,16 +19292,6 @@ msgstr ""
 msgid "Qualify helpdesk queries with a website form"
 msgstr ""
 
-#. module: base
-#: model:ir.module.category,name:base.module_category_manufacturing_quality
-#: model:ir.module.module,shortdesc:base.module_quality_control
-msgid "Quality"
-msgstr "গুণমান"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_quality_control_picking_batch
-msgid "Quality - Batch Transfer"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_quality
@@ -19789,45 +19304,10 @@ msgid "Quality Steps with IoT"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_quality_control_iot
-msgid "Quality checks with IoT"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_quality_iot
 msgid "Quality steps and IoT devices"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,description:base.module_website_event_questions
-#: model:ir.module.module,shortdesc:base.module_website_event_questions
-msgid "Questions on Events"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_meet_quiz
-msgid "Quiz and Meet on community"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_meet_quiz
-msgid "Quiz and Meet on community route"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track_live_quiz
-msgid "Quiz on Live Event Tracks"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_track_quiz
-msgid "Quizzes on Tracks"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_track_quiz
-msgid "Quizzes on tracks"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_quotation_builder
@@ -20710,10 +20190,6 @@ msgstr ""
 msgid "Sale Stock Margin"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_subscription_dashboard
-msgid "Sale Subscription Dashboard"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_purchase
@@ -20869,10 +20345,6 @@ msgstr ""
 msgid "Schedule employees' meetings"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_social
-msgid "Schedule push notifications on attendees"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_timesheet_holidays
@@ -21089,11 +20561,6 @@ msgid "Sell digital products in your eCommerce store"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_website_event_sale
-msgid "Sell event tickets online"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_website_sale
 msgid "Sell your products online"
 msgstr ""
@@ -21112,13 +20579,6 @@ msgstr ""
 #: model:ir.module.module,description:base.module_social_push_notifications
 #: model:ir.module.module,summary:base.module_social_push_notifications
 msgid "Send live notifications to your web visitors"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_track_social
-msgid ""
-"Send reminder push notifications to event attendees based on wishlisted "
-"tracks."
 msgstr ""
 
 #. module: base
@@ -21635,11 +21095,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_website_event_track
-msgid "Sponsors, Tracks, Agenda, Event News"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_documents_spreadsheet_account
 msgid "Spreadsheet Accounting Templates"
 msgstr ""
@@ -21874,11 +21329,6 @@ msgid "Subcontract with Barcode"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_mrp_subcontracting_account
-msgid "Subcontracting Management with Stock Valuation"
-msgstr ""
-
-#. module: base
 #: model_terms:ir.ui.view,arch_db:base.edit_menu_access
 msgid "Submenus"
 msgstr ""
@@ -21893,22 +21343,6 @@ msgstr ""
 #: model:ir.module.category,name:base.module_category_sales_subscription
 msgid "Subscription"
 msgstr "সাবস্ক্রিপশন"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_subscription_sepa_direct_debit
-msgid "Subscription SEPA Direct Debit"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_subscription_timesheet
-msgid "Subscription and Timesheet"
-msgstr ""
-
-#. module: base
-#: model:ir.module.category,name:base.module_category_sales_subscriptions
-#: model:ir.module.module,shortdesc:base.module_sale_subscription
-msgid "Subscriptions"
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence__date_range_ids
@@ -21943,16 +21377,6 @@ msgstr "রবিবার"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_client__params
 msgid "Supplementary arguments"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_event_track_live
-msgid "Support live tracks: streaming, participation, youtube"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_quality_control_picking_batch
-msgid "Support of quality control into batch transfers"
 msgstr ""
 
 #. module: base
@@ -22030,11 +21454,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_timesheet_synchro
 msgid "Synchronization with the external timesheet application"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_sale_subscription_timesheet
-msgid "Synchronize data between timesheet and subscriptions"
 msgstr ""
 
 #. module: base
@@ -22178,10 +21597,6 @@ msgstr ""
 msgid "TaxCloud and Delivery - Ecommerce"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_subscription_taxcloud
-msgid "TaxCloud and Subscriptions"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_taxcloud
@@ -23001,14 +22416,6 @@ msgid ""
 "tests independently to functional aspects of other models. "
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,description:base.module_test_mail_full
-msgid ""
-"This module contains tests related to various mail features\n"
-"and mail-related sub modules. Those tests are present in a separate module as it\n"
-"contains models used only to perform tests independently to functional aspects of\n"
-"real applications. "
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_web_cohort
@@ -23029,31 +22436,10 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_sale_subscription_timesheet
-msgid ""
-"This module ensure that data (such as analytic accounts) defined on the sale"
-" order via timesheet app are correctly set also on subscriptions"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_sale_subscription_taxcloud
-msgid ""
-"This module ensures that the taxes are computed on the invoice before a payment is created automatically for a subscription.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_website_sale_taxcloud_delivery
 msgid ""
 "This module ensures that when delivery price is computed online, and taxes are computed with TaxCloud, the tax computation is done correctly on both the order and delivery.\n"
 "    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_event_track_gantt
-msgid ""
-"This module helps analyzing and organizing event tracks.\n"
-"For that purpose it adds a gantt view on event tracks."
 msgstr ""
 
 #. module: base
@@ -24561,16 +23947,6 @@ msgid "Website Enterprise"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_crm_questions
-msgid "Website Event CRM Questions"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_event_crm
-msgid "Website Events CRM"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_form
 msgid "Website Form"
 msgstr ""
@@ -24583,11 +23959,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
 msgid "Website IM Livechat Helpdesk"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_jitsi
-msgid "Website Jitsi"
 msgstr ""
 
 #. module: base

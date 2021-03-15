@@ -20,14 +20,11 @@ class ResConfigSettings(models.TransientModel):
     module_base_import = fields.Boolean("Allow users to import data from CSV/XLS/XLSX/ODS files")
     module_google_calendar = fields.Boolean(
         string='Allow the users to synchronize their calendar  with Google Calendar')
-    module_microsoft_calendar = fields.Boolean(
-        string='Allow the users to synchronize their calendar with Outlook Calendar')
     module_google_drive = fields.Boolean("Attach Google documents to any record")
     module_google_spreadsheet = fields.Boolean("Google Spreadsheet")
     # TODO: remove in master
     module_base_gengo = fields.Boolean("Translate Your Website with Gengo")
     module_account_inter_company_rules = fields.Boolean("Manage Inter Company")
-    module_pad = fields.Boolean("Collaborative Pads")
     module_partner_autocomplete = fields.Boolean("Partner Autocomplete")
     module_base_geolocalize = fields.Boolean("GeoLocalize")
     module_google_recaptcha = fields.Boolean("reCAPTCHA: Easy on Humans, Hard on Bots")

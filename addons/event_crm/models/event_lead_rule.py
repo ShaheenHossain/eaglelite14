@@ -10,60 +10,6 @@ from odoo.osv import expression
 
 class EventLeadRule(models.Model):
     """ Rule model for creating / updating leads from event registrations.
-
-    SPECIFICATIONS: CREATION TYPE
-
-    There are two types of lead creation:
-
-      * per attendee: create a lead for each registration;
-      * per order: create a lead for a group of registrations;
-
-    The last one is only available through interface if it is possible to register
-    a group of attendees in one action (when event_sale or website_event are
-    installed). Behavior itself is implemented directly in event_crm.
-
-    Basically a group is either a list of registrations belonging to the same
-    event and created in batch (website_event flow). With event_sale this
-    definition will be improved to be based on sale_order.
-
-    SPECIFICATIONS: CREATION TRIGGERS
-
-    There are three options to trigger lead creation. We consider basically that
-    lead quality increases if attendees confirmed or went to the event. Triggers
-    allow therefore to run rules:
-
-      * at attendee creation;
-      * at attendee confirmation;
-      * at attendee venue;
-
-    This trigger defines when the rule will run.
-
-    SPECIFICATIONS: FILTERING REGISTRATIONS
-
-    When a batch of registrations matches the rule trigger we filter them based
-    on conditions and rules defines on event_lead_rule model. Heuristic is the
-    following:
-
-      * the rule is active;
-      * if a filter is set: filter registrations based on this filter. This is
-        done like a search, and filter is a domain;
-      * if a company is set on the rule, it must match event's company. Note
-        that multi-company rules apply on event_lead_rule;
-      * if an event category it set, it must match;
-      * if an event is set, it must match;
-      * if both event and category are set, one of them must match (OR). If none
-        of those are set, it is considered as OK;
-
-    If conditions are met, leads are created with pre-filled informations defined
-    on the rule (type, user_id, team_id). Contact information coming from the
-    registrations are computed (customer, name, email, phone, mobile, contact_name).
-
-    SPECIFICATIONS: OTHER POINTS
-
-    Note that all rules matching their conditions are applied. This means more
-    than one lead can be created depending on the configuration. This is
-    intended in order to give more freedom to the user using the automatic
-    lead generation.
     """
     _name = "event.lead.rule"
     _description = "Event Lead Rules"

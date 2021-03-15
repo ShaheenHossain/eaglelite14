@@ -431,10 +431,6 @@ Files: addons/web_editor/static/lib/webgl-image-filter/*
 Copyright: 2020 Dominic Szablewski
 License: MIT
 
-Files: addons/website_event_track/static/lib/idb-keyval/idb-keyval.js
-Copyright: 2016 Jake Archibald
-License: Apache-2.0
-
 Files: addons/website_google_map/static/src/lib/markerclusterer.js
 Copyright: 2010 Google Inc
 License: Apache-2.0
