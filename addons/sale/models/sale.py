@@ -333,7 +333,6 @@ class SaleOrder(models.Model):
         return super(SaleOrder, self).unlink()
 
     def validate_taxes_on_sales_order(self):
-        # Override for correct taxcloud computation
         # when using coupon and delivery
         return True
 

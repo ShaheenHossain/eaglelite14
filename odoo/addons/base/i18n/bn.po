@@ -769,17 +769,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_account_sepa
-msgid ""
-"\n"
-"        Generate payment orders as recommended by the SEPA norm, thanks to pain.001 messages. Supported pain version (countries) are pain.001.001.03 (generic), pain.001.001.03.ch.02 (Switzerland) and pain.001.003.03 (Germany). The generated XML file can then be uploaded to your bank.\n"
-"\n"
-"        This module follow the implementation guidelines issued by the European Payment Council.\n"
-"        For more information about the SEPA standards : http://www.iso20022.org/ and http://www.europeanpaymentscouncil.eu/\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_account_winbooks_import
 msgid ""
 "\n"
@@ -849,59 +838,6 @@ msgstr ""
 "একটি গ্রিড এন্ট্রি মাধ্যমে পণ্য বৈকল্পিক পরিমাণ চয়ন করে।"
 
 #. module: base
-#: model:ir.module.module,description:base.module_account_ponto
-msgid ""
-"\n"
-"        This module connects to my myponto.com to retrieve bank statements.\n"
-"\n"
-"        Currently, that service allows to connect to belgian banks only\n"
-"        (BNP Paribas Fortis, KBC, CBC, KBC Brussels, Fintro, Hello Bank, ING Belgium, AXA Belgium)\n"
-"        but aims to connect with all European banks later on\n"
-"    "
-msgstr ""
-"\n"
-"ব্যাঙ্কের বিবৃতি পুনরুদ্ধার করতে এই মডিউলটি আমার myponto.com এর সাথে সংযুক্ত।\n"
-"\n"
-"বর্তমানে, এই পরিষেবাটি কেবল বেলজিয়ামের ব্যাঙ্কগুলিতে সংযোগ করার অনুমতি দেয়\n"
-"(বিএনপি পরিবহনের ফোর্টিস, কেবিসি, সিবিসি, কেবিসি ব্রাসেলস, ফিন্ট্রো, হ্যালো ব্যাংক, আইএনজি বেলজিয়াম, এক্সএ বেলজিয়াম)\n"
-"তবে পরবর্তীতে সমস্ত ইউরোপীয় ব্যাংকের সাথে সংযোগ স্থাপনের লক্ষ্য"
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_sepa_direct_debit
-msgid ""
-"\n"
-"        This module enables the generation of SEPA Direct Debit (SDD)-compliant XML files (consistent\n"
-"        with pain.008.001.02 specification) to send to your bank in order to\n"
-"        collect a set of payments.\n"
-"\n"
-"        To be elligible for this payment method, a customer must have first\n"
-"        returned a mandate to the company, giving his consent to use direct debit.\n"
-"        This consent must have been encoded as a 'customer mandate' into Odoo.\n"
-"\n"
-"        You also need to meet the following requirements in order to properly\n"
-"        generate a SDD file:\n"
-"        - Your company account must be set to a valid IBAN number\n"
-"        - Your company must have been given a creditor identifier (this can be done in the 'settings' menu of the accounting module)\n"
-"        - Your company must have defined a journal to receive SDD payments (again, in 'settings' of accounting module)\n"
-"        - Every customer for which you generate a payment must have a valid IBAN account number.\n"
-"\n"
-"        Odoo will let you know if any of these requirements are not satisfied.\n"
-"\n"
-"        Any invoice that gets validated for a customer with a mandate will be\n"
-"        automatically set in 'paid' state, and a payment will be generated. An\n"
-"        option in the dashboard will then allow you to view all the payments generated\n"
-"        via SDD and to generate a XML collection file for them, grouping them as\n"
-"        you see fit.\n"
-"\n"
-"        A dedicated 'SEPA Direct Debit' payment method is also available for\n"
-"        open invoices, when selecting a bank account in the 'register payment' wizard.\n"
-"        Use it to generate a SDD payment for the invoices if you added a mandate\n"
-"        for its owner after its validation. You will see an error message if you\n"
-"        try to use this method on an invoice for whose payment no mandate can be used.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_google_recaptcha
 msgid ""
 "\n"
@@ -946,25 +882,6 @@ msgid ""
 msgstr ""
 "\n"
 "সরঞ্জাম এবং রক্ষণাবেক্ষণের অনুরোধগুলি ট্র্যাক করুন"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_account_plaid
-msgid ""
-"\n"
-"        Use Plaid.com to retrieve bank statements"
-msgstr ""
-"\n"
-"ব্যাঙ্কের বিবৃতি পুনরুদ্ধার করতে প্লেড ডট কম ব্যবহার করুন"
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_plaid
-msgid ""
-"\n"
-"        Use Plaid.com to retrieve bank statements.\n"
-"    "
-msgstr ""
-"\n"
-"ব্যাঙ্কের বিবৃতি পুনরুদ্ধার করতে প্লেড.কম ব্যবহার করুন।"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_recruitment_survey
@@ -1062,41 +979,6 @@ msgid ""
 "    "
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,description:base.module_sale_coupon_taxcloud
-msgid ""
-"\n"
-"    Manage discounts in taxclouds computations.\n"
-"    See https://taxcloud.com/support/discounts or\n"
-"    https://service.taxcloud.net/hc/en-us/articles/360015649791-How-can-discounts-be-applied-\n"
-"\n"
-"    Summary: all seller-provided discounts must be applied to the Sales Price before calculating sales tax.\n"
-"    Sellers should disclose their methodology to customers in a Discount Application Policy.\n"
-"\n"
-"    The algorithm is as follows:\n"
-"     - line-specific discounts are applied first, on the lines they are supposed to apply to.\n"
-"       This means product-specific discounts or discounts on the cheapest line.\n"
-"     - Then global discounts are applied evenly across paid lines, as much as possible.\n"
-"       If there is a remainder, it is applied sequentially, in the order of the lines,\n"
-"       until there is either no discount left or no discountable line left.\n"
-"\n"
-"    Note that discount lines (with a negative price) will have no taxes applied to them,\n"
-"    but rather the amount of these lines will be deduced from the lines they apply to during tax computation.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_sale_coupon_taxcloud_delivery
-msgid ""
-"\n"
-"    Manage discounts with deliveries in taxclouds computations.\n"
-"    This module follows the same logic as \"Account Taxcloud - Sale (coupon)\".\n"
-"    More information can be found there on how discount computations are made for TaxCloud.\n"
-"\n"
-"    There is an added option for discount (free shipping) on deliveries.\n"
-"    With Sale coupon delivery, the discount computation does not apply on delivery lines.\n"
-"    "
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_timesheet_attendance
@@ -1182,107 +1064,6 @@ msgid ""
 "* CITI - record design (same as the Digital VAT Book): https://www.afip.gob.ar/comprasyventas/documentos/RegimendeInformaciondeComprasyVentasDisenosdeRegistros1.xls\n"
 "* CITI - specification (provides more information on how to format the numbers and the fillings of the numeric / alphanumeric fields): https://www.afip.gob.ar/comprasyventas/documentos/Regimen-Informacion-Compras-Ventas-Especificaciones.doc\n"
 "\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_au_aba
-msgid ""
-"\n"
-"ABA Credit Transfer\n"
-"===================\n"
-"\n"
-"This module allows the generation of payment batches as ABA (Australian\n"
-"Bankers Association) text files.  The generated 'aba' file can be uploaded\n"
-"to many Australian banks.\n"
-"\n"
-"Setup\n"
-"-----\n"
-"\n"
-"- *Account > Configuration > invoicing > Journals*\n"
-"\n"
-"    If needed, create new journal or choose an existing journal with **Type**\n"
-"    set to *“Bank”*.\n"
-"\n"
-"    On **Advanced Settings**, ensure ABA Credit Transfer is ticked.\n"
-"\n"
-"    On the **Bank Account** tab, enter the **Account Number**.\n"
-"\n"
-"    On the same tab, ensure the ABA transfer information is set up.\n"
-"\n"
-"    **BSB** - Required, 6 digits, and will be auto formatted.\n"
-"\n"
-"    **Financial Institution Code** - Required (provided by bank or can be found\n"
-"    on Google).  It is three uppercase 3 characters.\n"
-"\n"
-"    **Supplying User Name** - Some banks allow this to be freeform, some banks\n"
-"    may reject the ABA file if the Supplying User Name is not as expected.  It\n"
-"    cannot be longer than 26 characters.\n"
-"\n"
-"    **APCA Identification Number** - User Identification number is bank\n"
-"    allocated.  It is 6 digits.\n"
-"\n"
-"    **Include Self Balancing Transaction** - Some institutions require that the\n"
-"    last be a self balancing transaction which is used as a verification.\n"
-"\n"
-"- *Accounting > Configuration > Payments > Bank Accounts*\n"
-"\n"
-"    Account will show up in list as the journal name.\n"
-"\n"
-"    Editing will show the **Account Number**.  This is important as it is used by\n"
-"    the ABA process.\n"
-"\n"
-"    **Bank** is optional.\n"
-"\n"
-"- *Contacts > Configuration > Bank Accounts > Bank Accounts*\n"
-"\n"
-"    Paying account will show up in list as the account number.\n"
-"\n"
-"    **Account Holder Name** - Can be entered here, if Required.  Generally not\n"
-"    validated by the banks on ABA file transfers, but may show up on the payee\n"
-"    bank statement against the payment.\n"
-"\n"
-"- Vendor bank accounts can be set up in the same place, however, it is\n"
-"  generally easier to set them up from the partner from for the Vendor.\n"
-"\n"
-"- *Accounting > Vendors > Vendors*\n"
-"\n"
-"    On **Accounting** tab, click on *\"View accounts detail\"* from where a\n"
-"    vendor bank account can be created or edited.\n"
-"\n"
-"    **Account Number** - Required, must be less than 9 digits.\n"
-"\n"
-"    **BSB** - Required, 6 digits, and will be auto formatted.\n"
-"\n"
-"    **Account Holder Name** - Optional.\n"
-"\n"
-"Use\n"
-"---\n"
-"\n"
-"- Create a vendor payment in the normal way.\n"
-"\n"
-"    Ensure the **Vendor** is one with a valid ABA payment account.\n"
-"\n"
-"    Choose the correct **Payment Journal** which is set for ABA payments.\n"
-"\n"
-"    Select **ABA Credit Transfer** radio button.\n"
-"\n"
-"    If the vendor has multiple bank account, you may need to select the\n"
-"    correct **Recipient Bank Account**.  Or if paying a vendor bill, it may\n"
-"    need the correct bank account associated with it.\n"
-"\n"
-"    Enter payment amount, etc.\n"
-"\n"
-"- *Vendors > Payments*\n"
-"\n"
-"    After payment(s) are confirmed, they will show up in the payments list.\n"
-"\n"
-"    Using filters, or sorting, select the payments to be included.  Under\n"
-"    *Actions* choose *Create batch payment*.\n"
-"\n"
-"- *Vendors > Batch Payments*\n"
-"\n"
-"    When validating a batch payment, the ABA file will be generated.  It can\n"
-"    be regenerated.  This file can then be uploaded to the bank.\n"
 msgstr ""
 
 #. module: base
@@ -1844,20 +1625,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_account_batch_payment
-msgid ""
-"\n"
-"Batch Payments\n"
-"=======================================\n"
-"Batch payments allow grouping payments.\n"
-"\n"
-"They are for example used to regroup serveral received checks before you deposit them in a single batch to the bank.\n"
-"The total amount deposited will then appear as a single transaction on your bank statement.\n"
-"When you proceed with the reconciliation, simply select the corresponding batch payment to reconcile all the payments within.\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll
 msgid ""
 "\n"
@@ -2081,14 +1848,6 @@ msgid ""
 "\n"
 "Better plan your future schedules by considering time effectively spent on old plannings\n"
 "\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_taxcloud
-msgid ""
-"\n"
-"Computes the sales tax automatically using TaxCloud and the customer's address in United States.\n"
-"    "
 msgstr ""
 
 #. module: base
@@ -3308,17 +3067,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_account_bank_statement_import_camt
-msgid ""
-"\n"
-"Module to import CAMT bank statements.\n"
-"======================================\n"
-"\n"
-"Improve the import of bank statement feature to support the SEPA recommended Cash Management format (CAMT.053).\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_l10n_be_coda
 msgid ""
 "\n"
@@ -3367,53 +3115,6 @@ msgid ""
 "description provided by the CODA configuration tables is based upon the CODA\n"
 "V2.2 specifications.\n"
 "If required, you can manually adjust the descriptions via the CODA configuration menu.\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_bank_statement_import_csv
-msgid ""
-"\n"
-"Module to import CSV bank statements.\n"
-"======================================\n"
-"\n"
-"This module allows you to import CSV Files in Odoo: they are parsed and stored in human readable format in\n"
-"Accounting \\ Bank and Cash \\ Bank Statements.\n"
-"\n"
-"Important Note\n"
-"---------------------------------------------\n"
-"Because of the CSV format limitation, we cannot ensure the same transactions aren't imported several times or handle multicurrency.\n"
-"Whenever possible, you should use a more appropriate file format like OFX.\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_bank_statement_import_ofx
-msgid ""
-"\n"
-"Module to import OFX bank statements.\n"
-"======================================\n"
-"\n"
-"This module allows you to import the machine readable OFX Files in Odoo: they are parsed and stored in human readable format in\n"
-"Accounting \\ Bank and Cash \\ Bank Statements.\n"
-"\n"
-"Bank Statements may be generated containing a subset of the OFX information (only those transaction lines that are required for the\n"
-"creation of the Financial Accounting records).\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_bank_statement_import_qif
-msgid ""
-"\n"
-"Module to import QIF bank statements.\n"
-"======================================\n"
-"\n"
-"This module allows you to import the machine readable QIF Files in Odoo: they are parsed and stored in human readable format in\n"
-"Accounting \\ Bank and Cash \\ Bank Statements.\n"
-"\n"
-"Important Note\n"
-"---------------------------------------------\n"
-"Because of the QIF format limitation, we cannot ensure the same transactions aren't imported several times or handle multicurrency.\n"
-"Whenever possible, you should use a more appropriate file format like OFX.\n"
 msgstr ""
 
 #. module: base
@@ -3910,16 +3611,6 @@ msgid ""
 "    - Printing the invoice will trigger the download of two files: the invoice, and its ISR\n"
 "    - Clicking the 'Send by mail' button will attach two files to your draft mail : the invoice, and the corresponding ISR.\n"
 "    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_account_yodlee
-msgid ""
-"\n"
-"Sync your bank feeds with Yodlee\n"
-"================================\n"
-"\n"
-"Yodlee interface.\n"
 msgstr ""
 
 #. module: base
@@ -6399,16 +6090,6 @@ msgid "Account Holder Name"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_account_invoice_extract
-msgid "Account Invoice Extract"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_invoice_extract_purchase
-msgid "Account Invoice Extract Purchase"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_bank__acc_number
 msgid "Account Number"
 msgstr ""
@@ -6423,30 +6104,6 @@ msgstr ""
 msgid "Account Security"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_taxcloud
-msgid "Account TaxCloud"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_website_sale_account_taxcloud
-msgid "Account TaxCloud - Ecommerce"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_account_taxcloud
-msgid "Account TaxCloud - Sale"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_coupon_taxcloud
-msgid "Account Taxcloud - Sale (coupon)"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_coupon_taxcloud_delivery
-msgid "Account Taxcloud - Sale (coupon) - Delivery"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_winbooks_import
@@ -7105,11 +6762,6 @@ msgid "Amazon/Delivery Bridge"
 msgstr "আমাজন / ডেলিভারি ব্রিজ"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_sale_amazon_taxcloud
-msgid "Amazon/TaxCloud Bridge"
-msgstr "আমাজন / ট্যাক্সক্লাউড ব্রিজ"
-
-#. module: base
 #: code:addons/base/models/ir_fields.py:0
 #, python-format
 msgid ""
@@ -7606,13 +7258,6 @@ msgstr ""
 #: code:addons/base/models/ir_module.py:0
 #, python-format
 msgid "Automatic install of downloaded Apps is currently disabled."
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_account_invoice_extract_purchase
-msgid ""
-"Automatically finds the purchase order linked to a vendor bill when using "
-"invoice extraction"
 msgstr ""
 
 #. module: base
@@ -8164,11 +7809,6 @@ msgid "Bridge module between Amazon Connector and Delivery"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,summary:base.module_sale_amazon_taxcloud
-msgid "Bridge module between Amazon Connector and TaxCloud"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_sale_timesheet_purchase
 msgid "Bridge module between Sales Timesheet and Purchase"
 msgstr ""
@@ -8203,11 +7843,6 @@ msgstr ""
 #: model:ir.module.module,description:base.module_payment_buckaroo
 #: model:ir.module.module,shortdesc:base.module_payment_buckaroo
 msgid "Buckaroo Payment Acquirer"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_budget
-msgid "Budget Management"
 msgstr ""
 
 #. module: base
@@ -8765,10 +8400,6 @@ msgstr ""
 msgid "Cohort View"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,summary:base.module_account_sepa_direct_debit
-msgid "Collect payments from your customers through SEPA direct debit."
-msgstr ""
 
 #. module: base
 #: model_terms:res.partner,website_description:base.res_partner_address_28
@@ -9032,12 +8663,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_score
 msgid "Compute scores and assign leads automatically"
-msgstr ""
-
-
-#. module: base
-#: model:ir.module.module,summary:base.module_website_sale_taxcloud_delivery
-msgid "Compute taxes with TaxCloud after online delivery computation."
 msgstr ""
 
 #. module: base
@@ -11449,10 +11074,6 @@ msgstr "অনুবাদ এক্সপোর্ট করুন"
 msgid "Export payments as ABA Credit Transfer files"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,summary:base.module_account_sepa
-msgid "Export payments as SEPA Credit Transfer files"
-msgstr ""
 
 #. module: base
 #: model:ir.model,name:base.model_ir_exports
@@ -11552,10 +11173,6 @@ msgstr ""
 msgid "Extract data from expense scans to fill them automatically"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,summary:base.module_account_invoice_extract
-msgid "Extract data from invoice scans to fill them automatically"
-msgstr ""
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_U
@@ -13543,28 +13160,8 @@ msgid "Import Amazon orders and sync deliveries"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_camt
-msgid "Import CAMT Bank Statement"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_csv
-msgid "Import CSV Bank Statement"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_account_winbooks_import
 msgid "Import Data From Winbooks"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_ofx
-msgid "Import OFX Bank Statement"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_qif
-msgid "Import QIF Bank Statement"
 msgstr ""
 
 #. module: base
@@ -15379,16 +14976,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_account_disallowed_expenses_fleet
 msgid "Manage disallowed expenses with fleets"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_sale_coupon_taxcloud_delivery
-msgid "Manage discounts in taxclouds computations with delivery."
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_sale_coupon_taxcloud
-msgid "Manage discounts in taxclouds computations."
 msgstr ""
 
 #. module: base
@@ -20022,15 +19609,6 @@ msgstr ""
 msgid "SEPA Countries"
 msgstr ""
 
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_sepa
-msgid "SEPA Credit Transfer"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_sepa_direct_debit
-msgid "SEPA Direct Debit"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_payroll_account_sepa
@@ -21593,17 +21171,6 @@ msgid "Tax ID"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_website_sale_taxcloud_delivery
-msgid "TaxCloud and Delivery - Ecommerce"
-msgstr ""
-
-
-#. module: base
-#: model:ir.module.module,summary:base.module_account_taxcloud
-msgid "TaxCloud make it easy for business to comply with sales tax law"
-msgstr ""
-
-#. module: base
 #: model:ir.module.category,name:base.module_category_hidden
 #: model:ir.ui.menu,name:base.menu_custom
 #: model_terms:ir.ui.view,arch_db:base.user_groups_view
@@ -22433,13 +22000,6 @@ msgid ""
 "and we don't want to reload the website module every time, including it's possible\n"
 "dependencies. Neither we want to add in website module some routes, views and\n"
 "models which only purpose is to run tests."
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_website_sale_taxcloud_delivery
-msgid ""
-"This module ensures that when delivery price is computed online, and taxes are computed with TaxCloud, the tax computation is done correctly on both the order and delivery.\n"
-"    "
 msgstr ""
 
 #. module: base
@@ -24227,16 +23787,6 @@ msgid "Yes, I understand the risks"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_account_yodlee
-msgid "Yodlee"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,summary:base.module_account_yodlee
-msgid "Yodlee Finance"
-msgstr ""
-
-#. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_simple_form
 msgid "You are inviting a new user."
 msgstr ""
@@ -24515,11 +24065,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_online_sync
 msgid "account_online_sync"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_plaid
-msgid "account_plaid"
 msgstr ""
 
 #. module: base

@@ -54,33 +54,15 @@ class ResConfigSettings(models.TransientModel):
         "Show line subtotals with taxes (B2C)",
         implied_group='account.group_show_line_subtotals_tax_included',
         group='base.group_portal,base.group_user,base.group_public')
-    group_show_purchase_receipts = fields.Boolean(string='Purchase Receipt',
-        implied_group='account.group_purchase_receipts')
     show_line_subtotals_tax_selection = fields.Selection([
         ('tax_excluded', 'Tax-Excluded'),
         ('tax_included', 'Tax-Included')], string="Line Subtotals Tax Display",
         required=True, default='tax_excluded',
         config_parameter='account.show_line_subtotals_tax_selection')
-    module_account_budget = fields.Boolean(string='Budget Management')
     module_account_payment = fields.Boolean(string='Invoice Online Payment')
     module_account_reports = fields.Boolean("Dynamic Reports")
-    module_account_batch_payment = fields.Boolean(string='Use batch payments',
-        help='This allows you grouping payments into a single batch and eases the reconciliation process.\n'
-             '-This installs the account_batch_payment module.')
-    module_account_sepa = fields.Boolean(string='SEPA Credit Transfer (SCT)')
-    module_account_sepa_direct_debit = fields.Boolean(string='Use SEPA Direct Debit')
-    module_account_plaid = fields.Boolean(string="Plaid Connector")
-    module_account_yodlee = fields.Boolean("Bank Interface - Sync your bank feeds automatically")
-    module_account_bank_statement_import_qif = fields.Boolean("Import .qif files")
-    module_account_bank_statement_import_ofx = fields.Boolean("Import in .ofx format")
-    module_account_bank_statement_import_csv = fields.Boolean("Import in .csv format")
-    module_account_bank_statement_import_camt = fields.Boolean("Import in CAMT.053 format")
     module_currency_rate_live = fields.Boolean(string="Automatic Currency Rates")
-    # module_account_intrastat = fields.Boolean(string='Intrastat')
     module_product_margin = fields.Boolean(string="Allow Product Margin")
-    module_l10n_eu_service = fields.Boolean(string="EU Digital Goods VAT")
-    module_account_taxcloud = fields.Boolean(string="Account TaxCloud")
-    module_account_invoice_extract = fields.Boolean(string="Bill Digitalization")
     tax_exigibility = fields.Boolean(string='Cash Basis', related='company_id.tax_exigibility', readonly=False)
     tax_cash_basis_journal_id = fields.Many2one('account.journal', related='company_id.tax_cash_basis_journal_id', string="Tax Cash Basis Journal", readonly=False)
     account_cash_basis_base_account_id = fields.Many2one(
@@ -137,11 +119,6 @@ class ResConfigSettings(models.TransientModel):
     def onchange_module_account_budget(self):
         if self.module_account_budget:
             self.group_analytic_accounting = True
-
-    @api.onchange('module_account_yodlee')
-    def onchange_account_yodlee(self):
-        if self.module_account_yodlee:
-            self.module_account_plaid = True
 
     @api.onchange('tax_exigibility')
     def _onchange_tax_exigibility(self):
