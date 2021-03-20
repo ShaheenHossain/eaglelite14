@@ -48,6 +48,8 @@ def _auto_install_l10n(env):
                 module_list.append('l10n_generic_coa')
         if country_code == 'US':
             module_list.append('account_plaid')
+        if country_code in ['US', 'CA']:
+            module_list.append('account_check_printing')
         if country_code in ['US', 'AU', 'NZ', 'CA', 'CO', 'EC', 'ES', 'FR', 'IN', 'MX', 'GB']:
             module_list.append('account_yodlee')
         if country_code in SYSCOHADA_LIST + [
@@ -57,6 +59,8 @@ def _auto_install_l10n(env):
             module_list.append('base_vat')
         if country_code == 'MX':
             module_list.append('l10n_mx_edi')
+        if country_code == 'AU':
+            module_list.append('account_reports_cash_basis')
 
         module_ids = env['ir.module.module'].search([('name', 'in', module_list), ('state', '=', 'uninstalled')])
         module_ids.sudo().button_install()

@@ -312,27 +312,17 @@ class AccountTax(models.Model):
 
         return rslt
 
-    def flatten_taxes_hierarchy(self, create_map=False):
+    def flatten_taxes_hierarchy(self):
         # Flattens the taxes contained in this recordset, returning all the
         # children at the bottom of the hierarchy, in a recordset, ordered by sequence.
         #   Eg. considering letters as taxes and alphabetic order as sequence :
         #   [G, B([A, D, F]), E, C] will be computed as [A, D, F, C, E, G]
-        # If create_map is True, an additional value is returned, a dictionary
-        # mapping each child tax to its parent group
         all_taxes = self.env['account.tax']
-        groups_map = {}
         for tax in self.sorted(key=lambda r: r.sequence):
             if tax.amount_type == 'group':
-                flattened_children = tax.children_tax_ids.flatten_taxes_hierarchy()
-                all_taxes += flattened_children
-                for flat_child in flattened_children:
-                    groups_map[flat_child] = tax
+                all_taxes += tax.children_tax_ids.flatten_taxes_hierarchy()
             else:
                 all_taxes += tax
-
-        if create_map:
-            return all_taxes, groups_map
-
         return all_taxes
 
     def get_tax_tags(self, is_refund, repartition_type):
@@ -368,7 +358,7 @@ class AccountTax(models.Model):
             company = self[0].company_id
 
         # 1) Flatten the taxes.
-        taxes, groups_map = self.flatten_taxes_hierarchy(create_map=True)
+        taxes = self.flatten_taxes_hierarchy()
 
         # 2) Avoid mixing taxes having price_include=False && include_base_amount=True
         # with taxes having price_include=True. This use case is not supported as the
@@ -395,7 +385,7 @@ class AccountTax(models.Model):
         # precision when we round the tax amount for each line (we use
         # the 'Account' decimal precision + 5), and that way it's like
         # rounding after the sum of the tax amounts of each line
-        prec = currency.rounding
+        prec = currency.decimal_places
 
         # In some cases, it is necessary to force/prevent the rounding of the tax and the total
         # amounts. For example, in SO/PO line, we don't want to round the price unit at the
@@ -406,7 +396,7 @@ class AccountTax(models.Model):
             round_tax = bool(self.env.context['round'])
 
         if not round_tax:
-            prec *= 1e-5
+            prec += 5
 
         # 4) Iterate the taxes in the reversed sequence order to retrieve the initial base of the computation.
         #     tax  |  base  |  amount  |
@@ -462,12 +452,9 @@ class AccountTax(models.Model):
         # For the computation of move lines, we could have a negative base value.
         # In this case, compute all with positive values and negate them at the end.
         sign = 1
-        if currency.is_zero(base):
-            sign = self._context.get('force_sign', 1)
-        elif base < 0:
-            sign = -1
         if base < 0:
             base = -base
+            sign = -1
 
         # Store the totals to reach when using price_include taxes (only the last price included in row)
         total_included_checkpoints = {}
@@ -538,8 +525,8 @@ class AccountTax(models.Model):
                     base, sign * price_unit, quantity, product, partner)
 
             # Round the tax_amount multiplied by the computed repartition lines factor.
-            tax_amount = round(tax_amount, precision_rounding=prec)
-            factorized_tax_amount = round(tax_amount * sum_repartition_factor, precision_rounding=prec)
+            tax_amount = round(tax_amount, prec)
+            factorized_tax_amount = round(tax_amount * sum_repartition_factor, prec)
 
             if price_include and not total_included_checkpoints.get(i):
                 cumulated_tax_included_amount += factorized_tax_amount
@@ -561,10 +548,10 @@ class AccountTax(models.Model):
             # The factorized_tax_amount will be 0.06 (200% x 0.03). However, each line taken independently will compute
             # 50% * 0.03 = 0.01 with rounding. It means there is 0.06 - 0.04 = 0.02 as total_rounding_error to dispatch
             # in lines as 2 x 0.01.
-            repartition_line_amounts = [round(tax_amount * line.factor, precision_rounding=prec) for line in tax_repartition_lines]
-            total_rounding_error = round(factorized_tax_amount - sum(repartition_line_amounts), precision_rounding=prec)
+            repartition_line_amounts = [round(tax_amount * line.factor, prec) for line in tax_repartition_lines]
+            total_rounding_error = round(factorized_tax_amount - sum(repartition_line_amounts), prec)
             nber_rounding_steps = int(abs(total_rounding_error / currency.rounding))
-            rounding_error = round(nber_rounding_steps and total_rounding_error / nber_rounding_steps or 0.0, precision_rounding=prec)
+            rounding_error = round(nber_rounding_steps and total_rounding_error / nber_rounding_steps or 0.0, prec)
 
             for repartition_line, line_amount in zip(tax_repartition_lines, repartition_line_amounts):
 
@@ -576,14 +563,13 @@ class AccountTax(models.Model):
                     'id': tax.id,
                     'name': partner and tax.with_context(lang=partner.lang).name or tax.name,
                     'amount': sign * line_amount,
-                    'base': round(sign * base, precision_rounding=prec),
+                    'base': round(sign * base, prec),
                     'sequence': tax.sequence,
                     'account_id': tax.cash_basis_transition_account_id.id if tax.tax_exigibility == 'on_payment' else repartition_line.account_id.id,
                     'analytic': tax.analytic,
                     'price_include': price_include,
                     'tax_exigibility': tax.tax_exigibility,
                     'tax_repartition_line_id': repartition_line.id,
-                    'group': groups_map.get(tax),
                     'tag_ids': (repartition_line.tag_ids + subsequent_tags).ids,
                     'tax_ids': subsequent_taxes.ids,
                 })
@@ -650,16 +636,15 @@ class AccountTaxRepartitionLine(models.Model):
     tax_id = fields.Many2one(comodel_name='account.tax', compute='_compute_tax_id')
     tax_fiscal_country_id = fields.Many2one(string="Fiscal Country", comodel_name='res.country', related='company_id.account_tax_fiscal_country_id', help="Technical field used to restrict tags domain in form view.")
     company_id = fields.Many2one(string="Company", comodel_name='res.company', compute="_compute_company", store=True, help="The company this distribution line belongs to.")
-    sequence = fields.Integer(string="Sequence", default=1,
-        help="The order in which distribution lines are displayed and matched. For refunds to work properly, invoice distribution lines should be arranged in the same order as the credit note distribution lines they correspond to.")
+    sequence = fields.Integer(string="Sequence", default=1, help="The order in which display and match distribution lines. For refunds to work properly, invoice distribution lines should be arranged in the same order as the credit note distribution lines they correspond to.")
     use_in_tax_closing = fields.Boolean(string="Tax Closing Entry")
 
-    @api.onchange('account_id', 'repartition_type')
+    @api.onchange('account_id')
     def _on_change_account_id(self):
-        if not self.account_id or self.repartition_type == 'base':
+        if not self.account_id:
             self.use_in_tax_closing = False
         else:
-            self.use_in_tax_closing = self.account_id.internal_group not in ('income', 'expense')
+            self.use_in_tax_closing = not(self.account_id.internal_group == 'income' or self.account_id.internal_group == 'expense')
 
     @api.constrains('invoice_tax_id', 'refund_tax_id')
     def validate_tax_template_link(self):

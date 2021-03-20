@@ -27,9 +27,4 @@ class IrActionsReport(models.Model):
         # don't save the 'account.report_original_vendor_bill' report as it's just a mean to print existing attachments
         if self.report_name == 'account.report_original_vendor_bill':
             return None
-        res = super(IrActionsReport, self)._postprocess_pdf_report(record, buffer)
-        if self.model == 'account.move' and record.state == 'posted' and record.is_sale_document(include_receipts=True):
-            attachment = self.retrieve_attachment(record)
-            if attachment:
-                attachment.register_as_main_attachment(force=False)
-        return res
+        return super(IrActionsReport, self)._postprocess_pdf_report(record, buffer)

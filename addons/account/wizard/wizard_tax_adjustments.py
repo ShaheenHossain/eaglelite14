@@ -61,7 +61,8 @@ class TaxAdjustments(models.TransientModel):
         move._post()
 
         # Return an action opening the created move
-        result = self.env['ir.actions.act_window']._for_xml_id('account.action_move_line_form')
+        action = self.env.ref(self.env.context.get('action', 'account.action_move_line_form'))
+        result = action.read()[0]
         result['views'] = [(False, 'form')]
         result['res_id'] = move.id
         return result

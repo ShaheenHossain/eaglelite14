@@ -13188,11 +13188,6 @@ msgid "Import/Export Invoices From XML/PDF"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_account_edi_facturx
-msgid "Import/Export invoices with Factur-X"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_account_edi_ubl
 msgid "Import/Export invoices with generic UBL"
 msgstr ""

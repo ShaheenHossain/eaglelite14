@@ -61,14 +61,14 @@
         <field name="category_id" ref="base.module_category_hidden"/>
     </record>
 
-<!--    <record id="group_sale_receipts" model="res.groups">
+    <record id="group_sale_receipts" model="res.groups">
         <field name="name">Sale Receipt</field>
         <field name="category_id" ref="base.module_category_hidden"/>
-    </record>-->
-<!--    <record id="group_purchase_receipts" model="res.groups">
+    </record>
+    <record id="group_purchase_receipts" model="res.groups">
         <field name="name">Purchase Receipt</field>
         <field name="category_id" ref="base.module_category_hidden"/>
-    </record>-->
+    </record>
 
 </data>
 
@@ -256,13 +256,6 @@
     <record id="account_move_line_rule_group_invoice" model="ir.rule">
         <field name="name">Readonly Move Line</field>
         <field name="model_id" ref="model_account_move_line"/>
-        <field name="domain_force">[(1, '=', 1)]</field>
-        <field name="groups" eval="[(4, ref('account.group_account_invoice'))]"/>
-    </record>
-
-    <record id="account_invoice_send_rule_group_invoice" model="ir.rule">
-        <field name="name">Readonly Invoice Send and Print</field>
-        <field name="model_id" ref="model_account_invoice_send"/>
         <field name="domain_force">[(1, '=', 1)]</field>
         <field name="groups" eval="[(4, ref('account.group_account_invoice'))]"/>
     </record>

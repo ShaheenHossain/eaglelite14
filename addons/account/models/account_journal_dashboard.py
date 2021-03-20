@@ -431,7 +431,7 @@ class account_journal(models.Model):
     def to_check_ids(self):
         self.ensure_one()
         domain = self.env['account.move.line']._get_suspense_moves_domain()
-        domain += [('journal_id', '=', self.id),('statement_line_id.is_reconciled', '=', False)]
+        domain.append(('journal_id', '=', self.id))
         statement_line_ids = self.env['account.move.line'].search(domain).mapped('statement_line_id')
         return statement_line_ids
 
@@ -456,7 +456,7 @@ class account_journal(models.Model):
         action_name = self._select_action_to_open()
 
         # Set 'account.' prefix if missing.
-        if not action_name.startswith("account."):
+        if '.' not in action_name:
             action_name = 'account.%s' % action_name
 
         action = self.env["ir.actions.act_window"]._for_xml_id(action_name)
@@ -480,7 +480,7 @@ class account_journal(models.Model):
             if self.type == 'sale':
                 action['domain'] = [(domain_type_field, 'in', ('out_invoice', 'out_refund', 'out_receipt'))]
             elif self.type == 'purchase':
-                action['domain'] = [(domain_type_field, 'in', ('in_invoice', 'in_refund', 'in_receipt', 'entry'))]
+                action['domain'] = [(domain_type_field, 'in', ('in_invoice', 'in_refund', 'in_receipt'))]
 
         return action
 
@@ -500,7 +500,7 @@ class account_journal(models.Model):
             action_ref = 'account.action_account_payments_transfer'
         else:
             action_ref = 'account.action_account_payments'
-        action = self.env['ir.actions.act_window']._for_xml_id(action_ref)
+        [action] = self.env.ref(action_ref).read()
         action['context'] = dict(ast.literal_eval(action.get('context')), default_journal_id=self.id, search_default_journal_id=self.id)
         if payment_type == 'transfer':
             action['context'].update({
@@ -518,9 +518,10 @@ class account_journal(models.Model):
         ctx = dict(self.env.context, default_journal_id=self.id)
         if ctx.get('search_default_journal', False):
             ctx.update(search_default_journal_id=self.id)
-            ctx['search_default_journal'] = False  # otherwise it will do a useless groupby in bank statements
         ctx.pop('group_by', None)
-        action = self.env['ir.actions.act_window']._for_xml_id(f"account.{action_name}")
+        ir_model_obj = self.env['ir.model.data']
+        model, action_id = ir_model_obj.get_object_reference('account', action_name)
+        [action] = self.env[model].browse(action_id).read()
         action['context'] = ctx
         if ctx.get('use_domain', False):
             action['domain'] = isinstance(ctx['use_domain'], list) and ctx['use_domain'] or ['|', ('journal_id', '=', self.id), ('journal_id', '=', False)]

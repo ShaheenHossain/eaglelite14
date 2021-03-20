@@ -15,6 +15,11 @@ odoo.define('account.tax.group.tour.tests', function (require) {
             edition: 'community',
         },
         {
+            content: "Go to Accounting",
+            trigger: '.o_app[data-menu-xmlid="account_accountant.menu_accounting"]',
+            edition: 'enterprise',
+        },
+        {
             content: "Go to Vendors",
             trigger: 'a:contains("Vendors")',
         },
